@@ -3,11 +3,11 @@ import { NewsNav } from './components/NewsNav'
 import News from './components/News'
 
 const App = () => {
-    const [catagory, setcatagory] = useState()
+    const [category, setCategory] = useState("general")
   return (
     <>
-      <NewsNav setcatagory = {catagory}/>
-      <News catagory = {catagory}/>
+      <NewsNav setCategory = {setCategory}/>
+      <News category = {category}/>
     </>
   )
 }
